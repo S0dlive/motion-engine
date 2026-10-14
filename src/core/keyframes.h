@@ -34,7 +34,6 @@ public:
         if (currentFrame <= keyframes.front().frame) return keyframes.front().value;
         if (currentFrame >= keyframes.back().frame) return keyframes.back().value;
 
-        // Trouver l'intervalle entre deux keyframes
         for (size_t i = 0; i < keyframes.size() - 1; ++i) {
             const auto& k1 = keyframes[i];
             const auto& k2 = keyframes[i + 1];

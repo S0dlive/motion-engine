@@ -25,7 +25,6 @@ namespace Easing {
         return t < 0.5f ? 4.0f * t * t * t : 1.0f - std::pow(-2.0f * t + 2.0f, 3.0f) / 2.0f;
     }
 
-    // Rebond élastique / Spring (idéal pour le motion design moderne)
     inline float spring(float t) {
         if (t <= 0.0f) return 0.0f;
         if (t >= 1.0f) return 1.0f;
@@ -42,7 +41,7 @@ namespace Easing {
         if (easingType == "ease_in_out") return easeInOutCubic(t);
         if (easingType == "spring") return spring(t);
 
-        return linear(t); // Par défaut
+        return linear(t);
     }
 
 }

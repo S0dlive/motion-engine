@@ -10,6 +10,13 @@
 #include <vector>
 #include <cstdint>
 
+#pragma once
+
+#include <string>
+#include <cstdio>
+#include <vector>
+#include <cstdint>
+
 class Encoder {
 public:
     Encoder(const std::string& outputFile, int width, int height, int fps);

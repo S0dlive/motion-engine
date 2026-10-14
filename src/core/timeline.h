@@ -4,7 +4,6 @@
 
 #ifndef MOTION_ENGINE_TIMELINE_H
 #define MOTION_ENGINE_TIMELINE_H
-
 #pragma once
 
 #include <string>
@@ -29,7 +28,6 @@ struct Element {
     float width = 100.0f;
     float height = 100.0f;
     float cornerRadius = 0.0f;
-    uint32_t color = 0xFFEB3755;
 
     ElementTransform transform;
 };
